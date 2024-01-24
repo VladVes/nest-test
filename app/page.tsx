@@ -6,7 +6,7 @@ import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-const status = 'paid';
+// const status = 'paid';
 
 export default function Page() {
   return (
@@ -17,13 +17,7 @@ export default function Page() {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
            <span
-      className={clsx(
-        'inline-flex items-center rounded-full px-2 py-1 text-sm',
-        {
-          'bg-gray-100 text-gray-500': status === 'pending',
-          'bg-green-500 text-white': status === 'paid',
-        },
-      )}
+      className='inline-flex items-center rounded-full px-2 py-1 text-sm bg-green-500 text-white'
     >STATUS</span>
           <div className={styles.shape}></div>
           {/* <div className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"/> */}
